@@ -50,7 +50,7 @@ const Reviews = () => {
   }, []);
 
   return (
-    <div className="bg-green-900 text-white py-12 px-6 rounded-lg relative">
+    <div className="bg-[#4A6A55] text-white py-24 px-6 rounded-lg relative">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-2xl md:text-3xl font-semibold italic">
           “{reviews[index].text}”
@@ -92,6 +92,39 @@ const Reviews = () => {
           alt="Illustration"
           className="opacity-70"
         />
+      </div>
+
+      {/* Additional Content to Enhance Length */}
+      <div className="mt-12">
+        <h2 className="text-2xl font-semibold text-center">
+          Why Choose CareVerse?
+        </h2>
+        <p className="mt-4 text-center max-w-2xl mx-auto">
+          CareVerse is designed to make healthcare management seamless and
+          efficient. From booking appointments to tracking your health, our
+          platform offers a comprehensive solution for both patients and
+          healthcare providers.
+        </p>
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white text-green-900 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold">For Patients</h3>
+            <ul className="mt-4 list-disc list-inside">
+              <li>Easy appointment booking</li>
+              <li>Medication reminders</li>
+              <li>Virtual consultations</li>
+              <li>Health tracking</li>
+            </ul>
+          </div>
+          <div className="bg-white text-green-900 p-6 rounded-lg shadow-md">
+            <h3 className="text-xl font-semibold">For Providers</h3>
+            <ul className="mt-4 list-disc list-inside">
+              <li>Seamless patient record management</li>
+              <li>Efficient appointment scheduling</li>
+              <li>Secure communication</li>
+              <li>Comprehensive health analytics</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

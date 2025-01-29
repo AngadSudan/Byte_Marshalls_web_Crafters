@@ -35,7 +35,7 @@ function Header() {
               <span className="text-[#F1F1F1] font-medium">John Doe</span>
               <a
                 href="/profile"
-                className="px-6 py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
+                className="px-4 py-2 md:px-6 md:py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
                    bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
               >
                 Profile
@@ -45,14 +45,14 @@ function Header() {
             <>
               <a
                 href="/login"
-                className="px-6 py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
+                className="px-4 py-2 md:px-6 md:py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
                    bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
               >
                 Login
               </a>
               <a
                 href="/signup"
-                className="px-6 py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
+                className="px-4 py-2 md:px-6 md:py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
                    bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
               >
                 Get Started
