@@ -21,7 +21,7 @@ import {
 } from "./pages/index.js";
 import FAQs from "./pages/Faqs.jsx";
 import Advice from "./pages/Advice.jsx";
-import Review from "./pages/Review.jsx";
+import Reviews from "./pages/Reviews.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -33,7 +33,7 @@ const router = createBrowserRouter(
         <Route path="signup" element={<Signup />} />
         <Route path="faq" element={<FAQs />} />
         <Route path="advice" element={<Advice />} />
-        <Route path="reviews" element={<Review />} />
+        <Route path="reviews" element={<Reviews />} />
       </Route>
       <Route path="login-doctor" element={<LoginDoctor />} />
       <Route path="login-user" element={<LoginUser />} />
