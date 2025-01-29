@@ -22,6 +22,8 @@ import {
 import FAQs from "./pages/Faqs.jsx";
 import Advice from "./pages/Advice.jsx";
 import Reviews from "./pages/Reviews.jsx";
+import CareVerseDashboard from "./pages/PatientID.jsx";
+import PatientList from "./pages/PatientList.jsx";
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
@@ -34,6 +36,8 @@ const router = createBrowserRouter(
         <Route path="faq" element={<FAQs />} />
         <Route path="advice" element={<Advice />} />
         <Route path="reviews" element={<Reviews />} />
+        <Route path="profile" element={<CareVerseDashboard />} />
+        <Route path="reviews" element={<PatientList />} />
       </Route>
       <Route path="login-doctor" element={<LoginDoctor />} />
       <Route path="login-user" element={<LoginUser />} />

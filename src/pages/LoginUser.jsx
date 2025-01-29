@@ -21,7 +21,7 @@ function LoginUser() {
     ) {
       localStorage.setItem("loggedIn", true);
       alert("Login Successful!");
-      window.location.href = "/dashboard"; // Redirect after login
+      window.location.href = "/profile"; // Redirect after login
     } else {
       alert("Invalid email or password");
     }

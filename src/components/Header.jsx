@@ -16,7 +16,13 @@ function Header() {
     <div>
       <header className="navbar-bg w-full p-4 bg-[#4A6A55] flex justify-between items-center fixed top-0 left-0 z-50 shadow-md">
         <div className="flex items-center space-x-10">
-          <img src={logo} className="w-[175px] " />
+          <img
+            src={logo}
+            className="w-[175px] "
+            onClick={() => {
+              window.location.href = "/";
+            }}
+          ></img>
           <nav className="hidden md:flex space-x-4">
             {navLinks.map((link, index) => (
               <a
@@ -36,7 +42,7 @@ function Header() {
               <a
                 href="/profile"
                 className="px-4 py-2 md:px-6 md:py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
-                   bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
+                    bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
               >
                 Profile
               </a>
@@ -46,14 +52,14 @@ function Header() {
               <a
                 href="/login"
                 className="px-4 py-2 md:px-6 md:py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
-                   bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
+                    bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
               >
                 Login
               </a>
               <a
                 href="/signup"
                 className="px-4 py-2 md:px-6 md:py-3 text-[#4A6A55] font-semibold rounded-lg shadow-md transition-all duration-300 
-                   bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
+                    bg-[#F1E7D0] hover:bg-[#D4A373] hover:shadow-lg hover:scale-105"
               >
                 Get Started
               </a>
